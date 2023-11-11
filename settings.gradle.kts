@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Duck"
 include(":app")
+include(":database")
