@@ -1,4 +1,4 @@
-package com.psycho.database.utility.core
+package com.psycho.utility.core
 
 import java.io.Serializable
 

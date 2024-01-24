@@ -6,12 +6,12 @@ import androidx.room.PrimaryKey
 import androidx.room.RoomWarnings
 import androidx.room.TypeConverters
 import com.psycho.database.schema.converters.financial.AmountConverter
-import com.psycho.database.utility.core.NetType
-import com.psycho.database.utility.core.NetStatus
+import com.psycho.utility.core.NetType
+import com.psycho.utility.core.NetStatus
 import com.psycho.database.schema.converters.core.NetTypeConverter
 import com.psycho.database.schema.converters.core.NetStatusConverter
 import com.psycho.database.schema.entities.BaseEntity
-import com.psycho.database.utility.financial.Amount
+import com.psycho.utility.financial.Amount
 import java.io.Serializable
 
 @Entity(tableName="net")

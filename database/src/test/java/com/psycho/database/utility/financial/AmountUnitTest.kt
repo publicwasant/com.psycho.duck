@@ -1,7 +1,9 @@
 package com.psycho.database.utility.financial
 
-import com.psycho.database.utility.print.Cell
-import com.psycho.database.utility.financial.FinancialUtils.Companion.AMOUNT_STANDARD_SOURCE
+import com.psycho.utility.print.Cell
+import com.psycho.utility.financial.FinancialUtils.Companion.AMOUNT_STANDARD_SOURCE
+import com.psycho.utility.financial.Amount
+import com.psycho.utility.financial.FinancialUtils
 import org.junit.Test
 
 class AmountUnitTest {

@@ -1,4 +1,4 @@
-package com.psycho.database.utility
+package com.psycho.utility
 
 object Constants {
     const val DATABASE_MANAGER_SDK_TAG = "@Duck:DB_ManagerSDK"

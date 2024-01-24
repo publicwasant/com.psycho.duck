@@ -3,14 +3,14 @@ package com.psycho.database.managers.implement.core
 import com.psycho.database.AppDatabase
 import com.psycho.database.managers.di.DatabaseManagerService
 import com.psycho.database.schema.dao.core.NetDao
-import com.psycho.database.utility.core.NetStatus
-import com.psycho.database.utility.core.NetType
+import com.psycho.utility.core.NetStatus
+import com.psycho.utility.core.NetType
 import com.psycho.database.schema.entities.core.Net
 import com.psycho.database.schema.entities.core.NetWorth
 import com.psycho.database.managers.implement.BaseManager
 import com.psycho.database.managers.interfaces.core.INetManager
 import com.psycho.database.schema.entities.core.NetRecord
-import com.psycho.database.utility.financial.Amount
+import com.psycho.utility.financial.Amount
 
 class NetManager(appDatabase: AppDatabase): INetManager<Net>, BaseManager<Net>(appDatabase.getNetDao()) {
     override val dao: NetDao = appDatabase.getNetDao()

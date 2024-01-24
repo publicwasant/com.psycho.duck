@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.Log
 import android.util.Log.INFO
 import com.psycho.database.AppDatabase
-import com.psycho.database.utility.Constants.DATABASE_MANAGER_SDK_TAG
+import com.psycho.utility.Constants.DATABASE_MANAGER_SDK_TAG
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.Koin
 import org.koin.core.module.Module

@@ -7,8 +7,8 @@ import com.psycho.database.managers.implement.BaseManager
 import com.psycho.database.managers.interfaces.core.INetWorthManager
 import com.psycho.database.schema.dao.core.NetWorthDao
 import com.psycho.database.schema.entities.core.Net
-import com.psycho.database.utility.core.NetType
-import com.psycho.database.utility.financial.Amount
+import com.psycho.utility.core.NetType
+import com.psycho.utility.financial.Amount
 
 class NetWorthManager(appDatabase: AppDatabase): INetWorthManager<NetWorth>, BaseManager<NetWorth>(appDatabase.getNetWorthDao()) {
     override val dao: NetWorthDao = appDatabase.getNetWorthDao()

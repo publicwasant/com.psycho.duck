@@ -1,4 +1,4 @@
-package com.psycho.database.utility.print
+package com.psycho.utility.print
 
 class Cell(
     val text: Any?,

@@ -1,11 +1,11 @@
 package com.psycho.database.managers.interfaces.core
 
-import com.psycho.database.utility.core.NetStatus
-import com.psycho.database.utility.core.NetType
+import com.psycho.utility.core.NetStatus
+import com.psycho.utility.core.NetType
 import com.psycho.database.schema.entities.core.NetWorth
 import com.psycho.database.managers.interfaces.IBaseManager
 import com.psycho.database.schema.entities.core.Net
-import com.psycho.database.utility.financial.Amount
+import com.psycho.utility.financial.Amount
 
 interface INetManager<T>: IBaseManager<T> {
     fun get(netWorth: NetWorth?): List<T>

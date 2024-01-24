@@ -2,8 +2,7 @@ package com.psycho.database.schema.converters.financial
 
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
-import com.psycho.database.utility.financial.Amount
-import com.psycho.database.utility.financial.FinancialUtils
+import com.psycho.utility.financial.Amount
 
 @ProvidedTypeConverter
 class AmountConverter {

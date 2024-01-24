@@ -2,7 +2,7 @@ package com.psycho.database.schema.converters.core
 
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
-import com.psycho.database.utility.core.NetStatus
+import com.psycho.utility.core.NetStatus
 
 @ProvidedTypeConverter
 class NetStatusConverter {

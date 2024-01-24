@@ -7,7 +7,7 @@ import androidx.room.RoomWarnings
 import androidx.room.TypeConverters
 import com.psycho.database.schema.converters.financial.AmountConverter
 import com.psycho.database.schema.entities.BaseEntity
-import com.psycho.database.utility.financial.Amount
+import com.psycho.utility.financial.Amount
 import java.io.Serializable
 
 @Entity(tableName="netRecord")

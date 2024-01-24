@@ -4,13 +4,9 @@ import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import com.psycho.database.managers.di.DatabaseManagerService
-import com.psycho.database.utility.core.NetWorthStatus
+import com.psycho.utility.core.NetWorthStatus
 import com.psycho.database.schema.converters.core.NetWorthStatusConverter
 import com.psycho.database.schema.entities.BaseEntity
-import com.psycho.database.utility.core.NetType
-import com.psycho.database.utility.financial.Amount
-import com.psycho.database.utility.financial.FinancialUtils
 import java.io.Serializable
 
 @Entity(tableName="netWorth")

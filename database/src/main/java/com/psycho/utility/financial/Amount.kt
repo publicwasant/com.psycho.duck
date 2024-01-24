@@ -1,4 +1,4 @@
-package com.psycho.database.utility.financial
+package com.psycho.utility.financial
 
 import java.io.Serializable
 

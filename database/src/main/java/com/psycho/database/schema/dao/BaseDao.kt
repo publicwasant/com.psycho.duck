@@ -1,14 +1,10 @@
 package com.psycho.database.schema.dao
 
-import android.util.Log
-import android.util.Log.INFO
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Update
-import com.psycho.database.utility.Constants.DATABASE_MANAGER_SDK_TAG
-import com.psycho.database.utility.print.Cell
 
 @Dao
 abstract class BaseDao <in T> {

@@ -17,9 +17,9 @@ import com.psycho.database.schema.entities.core.Account
 import com.psycho.database.schema.entities.core.Net
 import com.psycho.database.schema.entities.core.NetRecord
 import com.psycho.database.schema.entities.core.NetWorth
-import com.psycho.database.utility.Constants.DATABASE_EXPORTED_VERSION
-import com.psycho.database.utility.Constants.DATABASE_NAME
-import com.psycho.database.utility.Constants.DATABASE_VERSION
+import com.psycho.utility.Constants.DATABASE_EXPORTED_VERSION
+import com.psycho.utility.Constants.DATABASE_NAME
+import com.psycho.utility.Constants.DATABASE_VERSION
 
 @Database(entities=[Account::class, Net::class, NetRecord::class, NetWorth::class], version=DATABASE_EXPORTED_VERSION, exportSchema=false)
 @TypeConverters(AmountConverter::class, NetTypeConverter::class, NetStatusConverter::class, NetWorthStatusConverter::class)
@@ -33,11 +33,7 @@ abstract class AppDatabase: RoomDatabase() {
                 is AppDatabase -> instance!!
                 else -> {
                     synchronized(AppDatabase::class) {
-                        instance = Room.databaseBuilder(
-                            context.applicationContext,
-                            AppDatabase::class.java,
-                            DATABASE_NAME
-                        )
+                        instance = Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, DATABASE_NAME)
                             .allowMainThreadQueries()
                             .addMigrations()
                             .build()
