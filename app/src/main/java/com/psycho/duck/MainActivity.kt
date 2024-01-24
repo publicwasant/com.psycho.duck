@@ -1,14 +1,10 @@
 package com.psycho.duck
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import com.psycho.database.managers.di.DatabaseManagerSDK
-import com.psycho.database.managers.di.DatabaseManagerService
+import com.psycho.machine.activities.implement.BaseActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        DatabaseManagerSDK.init(this)
-        DatabaseManagerService.provider.databaseManager.netManager.get()
     }
 }
